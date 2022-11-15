@@ -101,12 +101,12 @@ public class Register extends AppCompatActivity {
                             fuser.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
-                                    Toast.makeText(getApplicationContext(), "Register Successfull", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "Registered Successfully", Toast.LENGTH_SHORT).show();
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG,"Onfailure: Email not Sent"+e.getMessage());
+                                    Log.d(TAG,"OnFailure: Email not Sent"+e.getMessage());
                                 }
                             });
                             Toast.makeText(getApplicationContext(), "User Created", Toast.LENGTH_SHORT).show();
@@ -119,12 +119,12 @@ public class Register extends AppCompatActivity {
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void unused) {
-                                    Log.d(TAG,"onsucces: user profile is created for"+ userID);
+                                    Log.d(TAG,"onSuccess: user profile is created for"+ userID);
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG,"onfaliure:"+e.toString());
+                                    Log.d(TAG,"onFailure:"+e.toString());
                                 }
                             });
 

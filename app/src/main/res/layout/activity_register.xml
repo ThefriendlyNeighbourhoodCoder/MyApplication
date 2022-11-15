@@ -10,9 +10,9 @@
     tools:context=".Register">
 
     <ImageView
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="150dp"
-        android:src="@drawable/design" />
+        android:src="@drawable/login" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         android:shadowDx="-2"
         android:shadowDy="2"
         android:shadowRadius="1"
-        android:text="SignUp to Explore the Journey of\nA Half Developer and a half Artist"
+        android:text="Sign Up to Explore the Journey of\nA Half Developer and a half Artist"
         android:textAlignment="textStart"
         android:textSize="15sp"
         app:autoSizeTextType="none" />
@@ -115,6 +115,7 @@
             android:padding="10dp"
             android:text="Start the Journey !"
             android:textColor="@color/white"
+            android:textSize="15dp"
             android:layout_marginTop="15dp"
             />
 
@@ -128,6 +129,7 @@
         android:background="#00000000"
         android:shadowColor="#A6A6A6"
         android:text="Already have an account?\n Log In"
+        android:textSize="18dp"
         android:textAlignment="center"
         android:textColor="@color/black" />
 
