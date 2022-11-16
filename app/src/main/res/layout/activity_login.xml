@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".Login">
-
 
 
     <ImageView
         android:id="@+id/logo_image"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:rotationX="-5"
-        android:scaleType="fitCenter"
+        android:rotationX="0"
+        android:scaleType="centerCrop"
         android:src="@drawable/login"
         android:transitionName="logo_image" />
 
@@ -64,6 +64,7 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="E-Mail"
+            android:textColorHint="@color/black"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:padding="10dp"
@@ -80,6 +81,7 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="Password"
+            android:textColorHint="@color/black"
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:padding="10dp"

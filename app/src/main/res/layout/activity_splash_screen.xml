@@ -4,35 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="@drawable/background"
+    android:fadingEdge="vertical"
     tools:context=".SplashScreen">
 
     <ImageView
         android:id="@+id/appSplash"
         android:layout_width="250dp"
         android:layout_height="250dp"
-        android:src="@drawable/design"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/design" />
+
     <TextView
         android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/appSplash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="EXPLORE UNKNOWN FACTS"
         android:textColor="@color/black"
-        android:layout_below="@+id/appSplash"
         android:textSize="25dp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-
-
-
-
-
-
-
-
-
+        android:textStyle="bold" />
 
 
 </RelativeLayout>
