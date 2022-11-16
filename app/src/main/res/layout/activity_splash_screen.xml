@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/poster"
     android:fadingEdge="vertical"
     tools:context=".SplashScreen">
 
     <ImageView
         android:id="@+id/appSplash"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
         android:layout_centerInParent="true"
         android:scaleType="fitCenter"
-        android:src="@drawable/design" />
+        android:src="@drawable/logof" />
 
     <TextView
         android:id="@+id/appName"
@@ -23,8 +23,13 @@
         android:layout_below="@+id/appSplash"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
+        android:fontFamily="@font/homemade_apple"
+        android:shadowColor="@color/black"
+        android:shadowDx="-5"
+        android:shadowDy="6"
+        android:shadowRadius="3"
         android:text="EXPLORE UNKNOWN FACTS"
-        android:textColor="@color/black"
+        android:textColor="#0000ff"
         android:textSize="25dp"
         android:textStyle="bold" />
 
