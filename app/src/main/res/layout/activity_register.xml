@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/stars"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".Register">
@@ -26,7 +26,8 @@
         android:shadowDy="5"
         android:shadowRadius="2"
         android:text="Welcome!"
-        android:textColor="@color/black"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -40,7 +41,8 @@
         android:shadowRadius="1"
         android:text="Sign Up to Explore the Journey of\nA Half Developer and a half Artist"
         android:textAlignment="textStart"
-        android:textColor="@color/black"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
+        android:textColor="@color/white"
         android:textSize="15sp"
         app:autoSizeTextType="none" />
 
@@ -48,20 +50,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp">
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp">
 
 
         <EditText
             android:id="@+id/fullname"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:paddingStart="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:ems="10"
             android:hint="Full Name"
-            android:textColorHint="@color/black"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:padding="10dp"
@@ -69,6 +75,11 @@
             />
         <EditText
             android:id="@+id/email"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            android:elevation="8dp"
+            android:paddingStart="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -76,14 +87,18 @@
             android:layout_marginEnd="10dp"
             android:ems="10"
             android:hint="E-Mail"
-            android:textColorHint="@color/black"
             android:inputType="textEmailAddress"
             android:minHeight="48dp"
             android:padding="10dp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/password"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/ic_baseline_key_24"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:paddingStart="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -91,7 +106,6 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="Create Password"
-            android:textColorHint="@color/black"
             android:inputType="textPassword"
             android:minHeight="48dp"
             android:padding="10dp"
@@ -100,6 +114,11 @@
 
         <EditText
             android:id="@+id/phone"
+            android:background="@drawable/edit"
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:drawablePadding="5dp"
+            android:elevation="20dp"
+            android:paddingStart="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -107,7 +126,6 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="Phone"
-            android:textColorHint="@color/black"
             android:inputType="number"
             android:minHeight="48dp"
             android:padding="10dp"
@@ -116,37 +134,42 @@
 
         <Button
             android:id="@+id/registerBtn"
+            android:background="@drawable/custom_button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="match_parent"
             android:padding="10dp"
             android:text="Start the Journey !"
             android:textColor="@color/white"
             android:textSize="15dp"
             android:layout_marginTop="15dp"
+            app:backgroundTint="#193EE8"
             />
 
         <TextView
-        android:id="@+id/createText"
-        android:layout_width="371dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="#00000000"
-        android:shadowColor="#A6A6A6"
-        android:text="Already have an account?\n Log In"
-        android:textSize="18dp"
-        android:textAlignment="center"
-        android:textColor="@color/black" />
+            android:id="@+id/createText"
+            android:background="@drawable/hollow"
+            android:elevation="20dp"
+            android:paddingStart="8dp"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:shadowColor="#A6A6A6"
+            android:text="Already have an account?\n Log In"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
     </LinearLayout>
 
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="369dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
         android:progressTint="#2196F3"
         android:visibility="invisible" />
 

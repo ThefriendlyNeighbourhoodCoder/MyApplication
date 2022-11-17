@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/poster"
+    android:background="@drawable/stars"
     android:fadingEdge="vertical"
     tools:context=".SplashScreen">
 
@@ -23,14 +23,14 @@
         android:layout_below="@+id/appSplash"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/homemade_apple"
+        android:fontFamily="@font/alegreya_sans_sc_medium"
         android:shadowColor="@color/black"
         android:shadowDx="-5"
         android:shadowDy="6"
         android:shadowRadius="3"
         android:text="EXPLORE UNKNOWN FACTS"
-        android:textColor="#0000ff"
-        android:textSize="25dp"
+        android:textColor="#fff"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
 
