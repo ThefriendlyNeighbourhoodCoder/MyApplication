@@ -46,3 +46,4 @@
 
 
 :copyright:	[Akash Patra](https://www.linkedin.com/in/akash-patra04/) 
+:email:	akashpatra0412personal@gmail.com
